@@ -17,8 +17,12 @@ rl.question("What's your name? Nicknames are also acceptable :)", (answer) => {
           let mealActivity = answer;
           rl.question("Which sport is your absolute favourite?",(answer)=>{
             let sport = answer;
-            console.log(`My name is ${name}. I like ${hobby} and I always listen to ${music} when I ${hobby}. My favourite meal in a day is ${meal}, I enjoy doing ${mealActivity} while having ${meal}, my facourite sport is ${sport}`);
+            rl.question("What is your superpower? In a few words, tell us what you are amazing at!",(answer)=>{
+              let superpower = answer;
+               console.log(`My name is ${name}. I like ${hobby} and I always listen to ${music} when I ${hobby}. My favourite meal in a day is ${meal}, I enjoy doing ${mealActivity} while having ${meal}, my facourite sport is ${sport}. My superpower is ${superpower}`);
             rl.close();
+            })
+           
           })
         })
 

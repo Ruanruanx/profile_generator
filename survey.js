@@ -15,8 +15,11 @@ rl.question("What's your name? Nicknames are also acceptable :)", (answer) => {
         let meal = answer;
         rl.question("What's your favourite thing to eat for that meal?", (answer) => {
           let mealActivity = answer;
-          console.log(`My name is ${name}. I like ${hobby} and I always listen to ${music} when I ${hobby}. My favourite meal in a day is ${meal}, I enjoy doing ${mealActivity} while having ${meal}`);
-          rl.close();
+          rl.question("Which sport is your absolute favourite?",(answer)=>{
+            let sport = answer;
+            console.log(`My name is ${name}. I like ${hobby} and I always listen to ${music} when I ${hobby}. My favourite meal in a day is ${meal}, I enjoy doing ${mealActivity} while having ${meal}, my facourite sport is ${sport}`);
+            rl.close();
+          })
         })
 
       })

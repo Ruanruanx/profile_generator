@@ -9,8 +9,12 @@ rl.question("What's your name? Nicknames are also acceptable :)",(answer)=>{
   let name = answer;
   rl.question("What's an activity you like doing?",(answer)=>{
   let hobby = answer;
-  console.log(name+hobby);
-  rl.close();
+    rl.question("What do you listen to while doing that?",(answer)=>{
+      let music = answer;
+      console.log(name+hobby+music);
+      rl.close();
+    })
+ 
   })
 
 })
